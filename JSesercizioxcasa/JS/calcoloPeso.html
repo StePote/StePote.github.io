@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+    </head>
+    <style>
+      body{
+          background-color:rgb(255, 196, 0);
+      }
+        .title{
+            color: red;
+            text-align: center;
+            font-family: fantasy;
+            font-size: 70px;
+        }
+        .allineareSx{
+            position:absolute; top:0px; left:0px;
+        }
+        .allineareDx{
+            position:absolute; top:0px; right:0px;
+        }
+    </style>
+    <script type="text/javascript">
+        function calcoloPeso(form){
+            var volume=document.getElementById("textbox").value;
+            /*for(var i=0;i<volume.lenght;i++){
+                if(volume[i]==",")
+                volume[i]=".";
+            }**/
+            volume=volume.replace(/\,/g , ".");
+            var pesoSpecifico;
+            if(form.r1.checked)
+            pesoSpecifico=1.74;
+            else if(form.r2.checked)
+            pesoSpecifico=6.8;
+            else if(form.r3.checked)
+            pesoSpecifico=0.88;
+            else if(form.r4.checked)
+            pesoSpecifico=0.92;
+            else
+            alert("GENERIC ERROR. Non hai scelto il materiale", "GENERIC ERROR")
+            var peso=pesoSpecifico*volume;
+            if(peso==NaN)
+            alert("GENERIC ERROR. Non hai inserito il volume", "GENERIC ERROR")
+            document.getElementById("esito").innerHTML=peso;
+        }
+        function resetta(){
+            document.getElementById("esito").innerHTML="-";
+        }
+    </script>
+    <body>
+		<p class="title"> CALCOLO PESO </p>
+        <img src="../images/bilancia.png" class="allineareSx">
+        <img src="../images/mate.jpg" class="allineareDx">
+       <form>
+           <fieldset>
+               <legend>
+                   Calcolo del peso.
+               </legend>
+               <p>Scegli il materiale:</p>
+                <p><input type="radio" name="risposta" id="r1" > Magnesio</p>
+                <p><input type="radio" name="risposta" id="r2" > Zinco</p>
+                <p><input type="radio" name="risposta" id="r3" > Ghiaccio</p>
+                <p><input type="radio" name="risposta" id="r4" > Gomma</p>
+               <p>Inserisci il volume:</p>
+           <input type="text" id="textbox" value="">
+           <br><br>
+           <input type="button" name="btnCalcola" value="Calcola peso" onclick="calcoloPeso(this.form)">
+           <input type="reset" name="BtnReset" value="Azzera" onclick="resetta()">
+           <p>Il peso è : <p id="esito">-</p></p>
+           </fieldset>
+       </form>
+    </body>
+</html>
