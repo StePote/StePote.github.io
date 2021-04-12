@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <meta charset="utf-8">
+        <title>Calcolo costo biglietto treno</title>
+    </head>
+    <!--background-image: url("../images/stazione.jpg");
+          background-size: 100%;-->
+    <script type="text/javascript" src="../js/bigliettoTreno.js"></script>
+    <body>
+		<p class="title"> CALCOLO COSTO BIGLIETTO TRENO </p>
+       <form>
+           <fieldset>
+               <legend>
+                   Benvenuto!
+               </legend>
+               <p>Inserire i km da percorrere:</p>
+                <input type="text" id="textbox" value="">
+               <p>Inserire la classe in cui si desidera viaggiare:</p>
+                <p><input type="radio" name="risposta" id="r1" > 1° classe</p>
+                <p><input type="radio" name="risposta" id="r2" > 2° classe</p>
+                <p>Scegliere la classe in cui si desidera viaggiare:</p>
+                <p><select id="NumeroPersone">
+                    <option>1 persona</option>
+                    <option>2 persone</option>
+                    <option>3 persone</option>
+                    <option>4 persone</option>
+                    <option>5 persone</option>
+                    <option>6 persone</option>
+                </select>
+            </p>
+           <br><br>
+           <input type="button" name="btnCalcola" value="Calcolo costo del biglietto" onclick="calcoloCosto(this.form)">
+           <input type="reset" name="BtnReset" value="Reset" onclick="resetta()">
+           <p>Il costo del biglietto singolo è : <p id="esito">-</p></p>
+           <p>Il costo totale è : <p id="esito2">-</p></p>
+           </fieldset>
+       </form>
+    </body>
+</html>

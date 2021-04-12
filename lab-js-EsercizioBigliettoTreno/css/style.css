@@ -1,0 +1,15 @@
+body{
+          background-color:rgb(255, 196, 0);
+      }
+        .title{
+            color: red;
+            text-align: center;
+            font-family: fantasy;
+            font-size: 70px;
+        }
+        .allineareSx{
+            position:absolute; top:0px; left:0px;
+        }
+        .allineareDx{
+            position:absolute; top:0px; right:0px;
+        }
