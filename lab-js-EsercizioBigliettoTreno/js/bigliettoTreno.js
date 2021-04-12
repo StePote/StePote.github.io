@@ -30,7 +30,7 @@ function calcoloCosto(form){
             if(form.r1.checked)
                 costoAlKm=0.43;
             else if(form.r2.checked)
-                costoAlKm=0.70;
+                costoAlKm=0.20;
             else
                 alert("GENERIC ERROR. Inserire la classe in cui si vuole viaggiare", "GENERIC ERROR")
             var costoSing;
