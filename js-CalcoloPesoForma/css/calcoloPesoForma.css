@@ -1,0 +1,14 @@
+body{
+	background-color:yellow;
+}
+.title{
+	font-family: fantasy;
+	color: black;
+	text-align: center;
+	font-size: 70px;
+}
+.scrittaFinale{
+	text-align:center;
+	font-size:60px;
+	color:red;
+}

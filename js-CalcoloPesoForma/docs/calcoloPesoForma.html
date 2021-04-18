@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/calcoloPesoForma.css">
+    <meta charset="utf-8">.
+    <title>Calcolo peso forma</title>
+</head>
+<script type="text/javascript" src="../js/calcoloPesoForma.js">
+</script>
+<body>
+    <p class="title">CALCOLO PESO FORMA</p>
+    <form>
+        <fieldset>
+            <legend>
+                <strong>Formula di Lorenz.</strong>
+             </legend>
+             <p>Altezza <strong>(cm)</strong>:</p>
+             <input type="text" id="textAltezza1" value="">
+             <p>Sesso:</p>
+             <select id="sesso1">
+                 <option></option>
+                 <option>Uomo</option>
+                 <option>Donna</option>
+             </select>
+             <br><br><br>
+             <input type="button" name="btnCalcolaLorenz" value="Calcola peso forma" onclick="calcolaLorenz()">
+             <p id="esitoLorenz"></p>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>
+                <strong>Formula di Broca.</strong>
+             </legend>
+             <p>Altezza <strong>(cm)</strong>:</p>
+             <input type="text" id="textAltezza2" value="">
+             <p>Sesso:</p>
+             <select id="sesso2">
+                <option></option>
+                 <option>Uomo</option>
+                 <option>Donna</option>
+             </select>
+             <br><br><br>
+             <input type="button" name="btnCalcolaBroca" value="Calcola peso forma" onclick="calcolaBroca()">
+             <p id="esitoBroca"></p>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>
+                <strong>Formula di Wan der Vael.</strong>
+             </legend>
+             <p>Altezza <strong>(cm)</strong>:</p>
+             <input type="text" id="textAltezza3" value="">
+             <p>Sesso:</p>
+             <select id="sesso3">
+                <option></option>
+                 <option>Uomo</option>
+                 <option>Donna</option>
+             </select>
+             <br><br><br>
+             <input type="button" name="btnCalcolaWan" value="Calcola peso forma" onclick="calcolaWan()">
+             <p id="esitoWan"></p>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>
+                <strong>BMI(Body max index).</strong>
+             </legend>
+             <p>Altezza <strong>(m)</strong>:</p>
+             <input type="text" id="textAltezza4" value="">
+             <p>Inserire il peso in <strong>kg</strong>:</p>
+             <input type="text" id="peso" value="">
+             <br><br><br>
+             <input type="button" name="btnCalcolaBMI" value="Calcola peso forma" onclick="calcolaBMI()">
+             <p id="esitoBMI"></p>
+             <div style="text-align: center"><img src="../images/tabellaBMI.jpg" class="img"></div>
+        </fieldset>
+    </form>
+    <p class="scrittaFinale"><strong>GRAZIE PER AVER VISITATO IL MIO SITO!<strong></p>
+</body>
+</html>
