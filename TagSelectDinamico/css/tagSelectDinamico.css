@@ -1,0 +1,74 @@
+body{
+    background:rgb(31, 79, 145);
+}
+.title{
+    text-align: center;
+    font-size: 50px;
+    position: relative;
+    top: -250px;
+    font-family: 'TIMSans','Roboto',sans-serif;
+    color: white;
+}
+.para{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'TIMSans','Roboto',sans-serif;
+}
+.elenco{
+    font-size: 20px;
+    text-align: center;
+    margin:0px auto;
+}
+.white{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 450px;
+    top: -300px;
+    font-family: 'TIMSans','Roboto',sans-serif;
+}
+.img{
+    position: relative;
+    top: -100px;
+    height: 400px;
+    width: 700px;
+    left:300px;
+    border-color: rgb(31, 79, 145);
+}
+.TIM{
+    color: white;
+    position: relative;
+    top: -980px;
+    left: 130px;
+    font-size: 30px;
+}
+.categoria{
+    text-align:right;
+    position: relative;
+    top: -750px;
+    color: white;
+    font-size: 30px;
+}
+.off{
+    color: white;
+    position: relative;
+    left: 10px;
+    top: 5px;
+}
+.offerta{
+    text-align: center;
+    font-size: 50px;
+    color:rgb(31, 79, 145);
+    font-family: 'TIMSans','Roboto',sans-serif;
+}
+.btn{
+    text-align: center;
+    display: block;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'TIMSans','Roboto',sans-serif;
+    font-size: 23px;
+}

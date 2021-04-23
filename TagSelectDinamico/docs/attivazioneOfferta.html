@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/attivazioneOfferta.css">
+        <meta charset="utf-8">
+        <title>Offerte telefonica</title>
+    </head>
+    <script type="text/javascript" src="../js/attivazioneOfferta.js"></script>
+    <body onload="inizializza()">    
+        <img src="../images/TIM3.png" class="img" >
+        <div style="background:rgb(255, 255, 255); border:5px solid rgb(255, 255, 255);padding:0px;margin: -8px;position: relative;height: 260px;top: -170px;width: 600px;right: -370px;">
+            <p class="para"><strong>TIM YOUNG Student Edition</strong></p>
+            <p class="descr"><strong>Internet</strong><br>
+            40 Giga da consumare come vuoi Giga illimitati per le app di Social, Chat, E-learning e Musica.
+            Al superamento dei Giga disponibili la navigazione continua a 1,90€ ogni 200 megabyte (max 1GB di scorta).
+            Minuti e SMS Illimitati.
+            <br><br>
+            <strong>TIMMUSIC</strong><br>
+            Incluso con streaming illimitato su 50 milioni di brani Crea le tue playlist  e ascolta tutte le novità.
+            <br><br>
+            <strong>LoSai e ChiamaOra di TIM</strong><br>
+            Inclusi</p>
+            <br><br><br><br><br><br><br><br><br><br></div>
+        <div class="dati"><p><strong>Dati anagrafici</strong></p>
+        <p>Nome: <input type="text" id="textNome" value=""> Cognome: <input type="text" id="textCognome" value=""></p>
+        <p><strong>Data di nascita</strong></p>
+        <p>Giorno<input type="text" id="textGiorno" value="">Mese: 
+            <select id="Mese">
+            <option></option>
+            <option>Gennaio</option>
+            <option>Febbraio</option>
+            <option>Marzo</option>
+            <option>Aprile</option>
+            <option>Maggio</option>
+            <option>Giugno</option>
+            <option>Luglio</option>
+            <option>Agosto</option>
+            <option>Settembre</option>
+            <option>Ottobre</option>
+            <option>Novembre</option>
+            <option>Dicembre</option>
+        </select> 
+        Anno: <input type="text" id="textAnno" value="">
+        <p>Colore degli occhi:<select id="cmbOcchi"></select></p>
+        <p>Sesso:<select id="cmbSesso"></select></p>
+        <p>Provincia di residenza:<select id="cmbProvincia"></select></p></div>
+        <input type="button" class="btn"name="btnAttivazione" value="Conferma attivazione" onclick="controlla()">
+    </body>
+</html>

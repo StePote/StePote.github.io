@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/esercizioQUIZ.css">
+        <meta charset="utf-8">
+        <title>QUIZ</title>
+    </head>
+    <script type="text/javascript" src="../js/esercizioQUIZ.js"></script>
+    <body>
+        <p class="title">QUIZ</p>
+        <p><strong>Dati anagrafici</strong></p>
+                <p>Nome: <input type="text" name="textNome" value=""> Cognome: <input type="text" name="textCognome" value=""></p>
+                <p><strong>Data di nascita</strong></p>
+                <p>Giorno<input type="text" name="textGiorno" value="">Mese: 
+                    <select>
+                    <option></option>
+                    <option>Gennaio</option>
+                    <option>Febbraio</option>
+                    <option>Marzo</option>
+                    <option>Aprile</option>
+                    <option>Maggio</option>
+                    <option>Giugno</option>
+                    <option>Luglio</option>
+                    <option>Agosto</option>
+                    <option>Settembre</option>
+                    <option>Ottobre</option>
+                    <option>Novembre</option>
+                    <option>Dicembre</option>
+                </select> 
+                Anno: <input type="text" name="textAnno" value=""></p>
+        <form>
+                
+            <fieldset>
+                <legend><strong>Domande</strong></legend>
+                <p>Qual è il linguaggio di programmazione usato per creare e modificare database?<strong>(in MAIUSCOLO)</strong></p>
+                <input type="text" name="Risposta1" value="">
+                <br><br>
+                <p>Quanti valori può assumere una variabile booleana?</p>
+                <select id="Risposta2">
+                        <option></option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>4</option>
+                        <option>256</option>
+                    </select>
+                    <br><br>
+                    <p>Quali sono le librerie caricate a run-time?</p>
+                    <p><input type="radio" name="risposta3" id="Risposta3_1">Statiche</p>
+                    <p><input type="radio" name="risposta3" id="Risposta3_2">Dinamiche</p>
+                    <br><br>
+                    <p>Quali tra queste sono parole chiave in C++?</p>
+                    <p><input type="checkbox" name="risposta4" id="Risposta4_1">void</p>
+                    <p><input type="checkbox" name="risposta4" id="Risposta4_2">intereger</p>
+                    <p><input type="checkbox" name="risposta4" id="Risposta4_3">char</p>
+                    <br>
+                    <p>8 bit corrispondono ad un...</p>
+                    <input type="text" name="Risposta5" value="">
+            </fieldset>
+            <input type="button" name="btnElabora" value="Elabora" onclick="calcolaPunteggio(this.form)">
+            <input type="reset" name="btnReset" value="Cancella" onclick="reset()">
+            <br><br>
+            <fieldset class="cornice">
+                <legend>
+                    <strong>Esito</strong>
+                </legend>
+                <p>Punteggio: <input type="text" name="textPunteggio" value=""></p>
+            </fieldset>
+            <p><input type="button" name="codiceUtente" value="Utente con punteggio" onclick="codiceUtente()"><input type="text" name="textCod" value=""></p>
+        </form>
+    </body>
+</html>
