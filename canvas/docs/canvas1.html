@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/canvas1.css">
+        <meta charset="utf-8">
+    </head>
+        <script type="text/javascript" src="../js/canvas1.js"></script>
+    <body>
+        <form>
+            <h1>Semicerchio</h1>
+        <!--<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #d3d3d3;">Your browser does not support the HTML canvas tag.</canvas>
+        <script> var c=document.getElementById("myCanvas"); var ctx=c.getContext("2d"); ctx.moveTo(0,0);ctx.lineTo(200,100);ctx.stroke();ctx.moveTo(200,0);ctx.lineTo(0,100);ctx.stroke();</script>-->
+        <input type="button" id="btnOK" value="Disegna" onclick="creaFigura()">
+        <p><canvas id="canvas1" width="400" height="300">Your browser does not support the HTML canvas tag.</canvas></p>
+        <input type="button" id="btnOlimpiadi" value="Disegna logo olimpiadi" onclick="olimpiadi()">
+        <p><canvas id="canvas2" width="1000" height="700">Your browser does not support the HTML canvas tag.</canvas></p><!--Il canvas è come un riquadro nella pagina in cui stabiliamo la sua altezza e larghezza e lì dentro possiamo disegnarci figure: width="1000" indica la larghezza in cui verrà contenuto il disegno (cioè la larghezza del canvas)/ height="700" indica indica l'altezza in cui verrà contenuto il disegno (cioè l'altezza del canvas)-->
+    </form>
+    </body>
+    </html>
