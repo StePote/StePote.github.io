@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(102,255,0);
+}
+.tavolo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.form{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.center{
+    text-align:center;
+}
