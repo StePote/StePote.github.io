@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(247, 85, 10);
+}
+.center{
+    text-align: center;
+}
+nav{
+    background-color: white;
+}
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+nav li a{
+    text-decoration: none;
+    color:black;
+}
+nav li{
+    padding: 15px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+nav ul li{
+    display: block;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dx{
+    text-align: right;
+}
