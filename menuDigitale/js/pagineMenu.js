@@ -25,9 +25,9 @@ function ordinazione1(){
     var ordine="Antipasti selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        ordine= ordine + antipasti[j];
+        ordine= ordine + antipasti[j].bold();
         else
-        ordine= ordine + " , " + antipasti[j];
+        ordine= ordine + " , " + antipasti[j].bold();
     }
     localStorage.setItem('ordineAntipasti',ordine);
 }
@@ -64,9 +64,9 @@ function ordinazione2(){
     var primiPiatti="Primi piatti selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        primiPiatti= primiPiatti + primi[j];
+        primiPiatti= primiPiatti + primi[j].bold();
         else
-        primiPiatti= primiPiatti + " , " + primi[j];
+        primiPiatti= primiPiatti + " , " + primi[j].bold();
     }
     localStorage.setItem('primiPiatti',primiPiatti);
 }
@@ -107,9 +107,9 @@ function ordinazione3(){
     var secondoPesce="Secondi di pesce selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        secondoPesce= secondoPesce + pesce[j];
+        secondoPesce= secondoPesce + pesce[j].bold();
         else
-        secondoPesce= secondoPesce + " , " + pesce[j];
+        secondoPesce= secondoPesce + " , " + pesce[j].bold();
     }
     localStorage.setItem('secondoPesce',secondoPesce);
 }
@@ -130,9 +130,9 @@ function ordinazione4(){
     var secondoCarne="Secondi di carne selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        secondoCarne= secondoCarne + carne[j];
+        secondoCarne= secondoCarne + carne[j].bold();
         else
-        secondoCarne= secondoCarne + " , " + carne[j];
+        secondoCarne= secondoCarne + " , " + carne[j].bold();
     }
     localStorage.setItem('secondoCarne',secondoCarne);
 }
@@ -181,9 +181,9 @@ function ordinazione5(){
     var ordFritti="Fritti selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        ordFritti= ordFritti + fritti[j];
+        ordFritti= ordFritti + fritti[j].bold();
         else
-        ordFritti= ordFritti + " , " + fritti[j];
+        ordFritti= ordFritti + " , " + fritti[j].bold();
     }
     localStorage.setItem('fritti',ordFritti);
 }
@@ -220,9 +220,9 @@ function ordinazione6(){
     var _dessert="Dessert selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        _dessert= _dessert + dessert[j];
+        _dessert= _dessert + dessert[j].bold();
         else
-        _dessert= _dessert + " , " + dessert[j];
+        _dessert= _dessert + " , " + dessert[j].bold();
     }
     localStorage.setItem('dessert',_dessert);
 }
@@ -271,9 +271,9 @@ function ordinazione7(){
     var _birra="Birre selezionate: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        _birra= _birra + birra[j];
+        _birra= _birra + birra[j].bold();
         else
-        _birra= _birra + " , " + birra[j];
+        _birra= _birra + " , " + birra[j].bold();
     }
     localStorage.setItem('birra',_birra);
 }
@@ -306,9 +306,9 @@ function ordinazione8(){
     var _vino="Vini selezionati: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        _vino= _vino + vino[j];
+        _vino= _vino + vino[j].bold();
         else
-        _vino= _vino + " , " + vino[j];
+        _vino= _vino + " , " + vino[j].bold();
     }
     localStorage.setItem('vino',_vino);
 }
@@ -337,9 +337,9 @@ function ordinazione9(){
     var _bibite="Bibite selezionate: ";
     for(var j=0;j<i;j++){
         if(j==0)
-        _bibite= _bibite + bibite[j];
+        _bibite= _bibite + bibite[j].bold();
         else
-        _bibite= _bibite + " , " + bibite[j];
+        _bibite= _bibite + " , " + bibite[j].bold();
     }
     localStorage.setItem('bibite',_bibite);
 }
@@ -348,23 +348,66 @@ function ordinazione9(){
 window.onload = function ordineTotale(){
     var antipasti=localStorage.getItem('ordineAntipasti');
     document.getElementById("ord1").innerHTML= antipasti;
+
+    if(antipasti==null || antipasti=="Antipasti selezionati: ")
+    document.getElementById("ord1").innerHTML= "Antipasti selezionati: -";
+
     var primiPiatti=localStorage.getItem('primiPiatti');
     document.getElementById("ord2").innerHTML= primiPiatti;
+
+    if(primiPiatti==null || primiPiatti=="Primi piatti selezionati: ")
+    document.getElementById("ord2").innerHTML= "Primi piatti selezionati: -";
+
     var secondoPesce=localStorage.getItem('secondoPesce');
     document.getElementById("ord3").innerHTML= secondoPesce;
+
+    if(secondoPesce==null || secondoPesce=="Secondi piatti di pesce selezionati: ")
+    document.getElementById("ord3").innerHTML= "Secondi piatti di pesce selezionati: -";
+
     var secondoCarne=localStorage.getItem('secondoCarne');
     document.getElementById("ord4").innerHTML= secondoCarne;
+
+    if(secondoCarne==null || secondoCarne=="Secondi piatti di carne selezionati: ")
+    document.getElementById("ord4").innerHTML= "Secondi piatti di carne selezionati: -";
+
     var fritti=localStorage.getItem('fritti');
     document.getElementById("ord5").innerHTML= fritti;
+
+    if(fritti==null || fritti=="Fritti selezionati: ")
+    document.getElementById("ord5").innerHTML= "Fritti selezionati: -";
+
     var dessert=localStorage.getItem('dessert');
     document.getElementById("ord6").innerHTML= dessert;
+
+    if(dessert==null || dessert=="Dessert selezionati: ")
+    document.getElementById("ord6").innerHTML= "Dessert selezionati: -";
+
     var birra=localStorage.getItem('birra');
     document.getElementById("ord7").innerHTML= birra;
+
+    if(birra==null || birra=="Birre selezionate: ")
+    document.getElementById("ord7").innerHTML= "Birre selezionate: -";
+
     var vini=localStorage.getItem('vino');
     document.getElementById("ord8").innerHTML= vini;
+
+    if(vini==null || vini=="Vini selezionati: ")
+    document.getElementById("ord8").innerHTML= "Vini selezionati: -";
+
     var bibite=localStorage.getItem('bibite');
     document.getElementById("ord9").innerHTML= bibite;
+    
+    if(bibite==null || bibite=="Bibite selezionate: ")
+    document.getElementById("ord9").innerHTML= "Bibite selezionate: -";
+
 }
 function clearLocaleStorage(){
     localStorage.clear();
+}
+function ConfermaOperazione() {
+    var richiesta = window.confirm("Uno volta inviato l'ordine non può più essere modificato. Continuare?");
+    if(richiesta==true){
+        alert("Ordine inviato correttamente.");
+        location.href="menuDigitale.html";
+    }
 }

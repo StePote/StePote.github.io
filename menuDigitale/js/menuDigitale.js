@@ -17,3 +17,6 @@ function controllo(){
         location.href="menu.html"
     }
 }
+function clearLocaleStorage(){
+    localStorage.clear();
+}
